@@ -108,8 +108,8 @@ header .header-logo {
   .slider-content .img-slider {
     height: 900px; }
   .slider-content .img-vehicle {
-    height: 600px;
-    transform: translateX(-20%); }
+    height: 900px;
+    transform: translateX(-30%); }
   .slider-content .right-corner-element {
     width: 45%;
     position: absolute;
@@ -295,6 +295,9 @@ header .header-logo {
 --------------------------------------------------------------*/
 .advantages-content {
   position: relative; }
+  .advantages-content p {
+    text-align: center;
+    font-size: 18px; }
 
 /*--------------------------------------------------------------
 	Footer
