@@ -1,0 +1,30 @@
+.competence-content{
+	position: relative;
+
+	.square div{
+		background-color: $bg_color_dark;
+		display: inline-block;
+		width: 24%;
+		//position: center;
+		margin: 5px;
+		padding: 2em 5em;
+		cursor: pointer;
+		white-space: normal;
+
+		&:hover{
+			background-color: $bg_mouseOver;
+		}
+
+		img{
+			width: 100%;
+			background-color: $bg_blue_color;
+			border-radius: 50%;
+			margin: 1em auto;
+		}
+
+
+		p{
+			display: none;
+		}
+	}
+}

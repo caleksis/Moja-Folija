@@ -1,0 +1,40 @@
+.topic-content{
+	position: relative;
+
+	.square-box{
+		width: 50%;
+		// position: absolute;
+
+		.img-cover{
+			width: 100%;
+			// position: absolute;
+		}
+
+		.left-corner{
+			-moz-transform: rotate(180deg);
+			-webkit-transform: rotate(180deg);
+			-o-transform: rotate(180);
+			-ms-transform: rotate(180deg);
+			transform: rotate(180deg);
+			width: 50%;
+  			position: absolute;
+  			bottom: 0;
+  			left: 0;
+		}
+		
+		.right-corner{
+			width: 50%;
+  			position: absolute;
+  			top: 0;
+  			right: 0;
+		}
+
+		.icon-picker{
+			width: 95px;
+		}
+	}
+
+	// img{
+	// 	width: 100%;
+	// }
+}

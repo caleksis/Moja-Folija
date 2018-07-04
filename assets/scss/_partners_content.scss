@@ -1,0 +1,22 @@
+.partners-content{
+	position: relative;
+
+	.container{
+		width: 90%;
+		margin: 0 auto;
+
+		.row div{
+			padding: 0 60px;
+		}
+
+		h2{
+			padding-bottom: 0;
+			padding-top: 15px;
+		}
+		
+		img{
+			height: 80px;
+			padding: 5px;
+		}
+	}
+}

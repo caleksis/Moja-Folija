@@ -1,0 +1,21 @@
+footer{
+	background-color: $bg_color_dark;
+
+	.row{
+		width: 90%;
+		margin: 0 auto;
+
+		.float-left{
+			padding-left: 20px;
+		}
+
+		p{
+			margin-top: 16px;
+			padding: 5px 10px;
+		}
+
+		span{
+			font-weight: bold;
+		}
+	}
+}

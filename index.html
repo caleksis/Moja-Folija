@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- user-scalable is for no zooming when mobile is used, ultimately it won't zoom gmaps -->
+  	<title>Moja Folija</title>
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- Default stylesheets-->
+    <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template specific stylesheets-->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <!-- Main stylesheet and color file-->
+    <link href="assets/scss/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="header-logo">
+        <img src="assets/images/logo_mojafolija.png" alt="Moja Folija">
+      </div>
+      <!-- <nav class="navbar navbar-expend-lg">
+      </nav> -->
+      <div class="main-navbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="fahrzeuge.html">Vehicles</a></li>
+          <li><a href="gebaude.html">Building</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#references">References</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown language-selector" onclick="myFunction()">
+            <!-- <img src="assets/images/icons/arrow-down.svg"> -->
+            <div class="language">
+              <a href="#" value="de">Deutsch</a>
+              <a href="#">English</a>
+              <a href="#">Srpski</a>
+            </div>
+          </li>
+        </ul>
+        </div>
+
+        <!-- <select name="lang" onchange="this.form.submit()">
+          <option value="de">Deutsch</option>
+          <option value="en" selected>English</option>
+          <option value="lat">Srpski</option>
+          <option value="cir">Српски</option>
+        </select> -->
+    </header>
+
+    <section class="slider-content">
+      <div class="slides">
+        <img src="assets/images/slider1.jpg" class="img-slider">
+        <img src="assets/images/dynamic-element.png" class="right-corner-element">
+        <div class="slide-line">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-5 wrapper">
+                <div class="icon-picker" onclick="currentSlide(1)">
+                  <img src="assets/images/icons/gebaeude.png">
+                  <p>Buiding</p>
+                </div>
+                <div class="icon-picker" onclick="currentSlide(2)">
+                  <img src="assets/images/icons/fahrzeuge.png">
+                  <p>Vehicles</p>
+                </div>
+              </div>
+              <div class="col-sm-7">
+                <h2>Lorem ipsum dolor sitam est magnatus semper</br>Sitam mang hoitus ermit.</h2>
+                <a href="#vehicles">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slides">
+        <img src="assets/images/ekonomicnost.jpg" class="img-slider">
+        <img src="assets/images/dynamic-element.png" class="right-corner-element">
+        <div class="slide-line">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-5 wrapper">
+                <div class="icon-picker" onclick="currentSlide(1)">
+                  <img src="assets/images/icons/gebaeude.png">
+                  <p>Buiding</p>
+                </div>
+                <div class="icon-picker" onclick="currentSlide(2)">
+                  <img src="assets/images/icons/fahrzeuge.png">
+                  <p>Vehicles</p>
+                </div>
+              </div>
+              <div class="col-sm-7 text-bottom">
+                <h2>Lorem ipsum dolor sitam est magnatus semper</br>Sitam mang hoitus ermit.</h2>
+                <a href="#gebaude">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2>Lorem ipsum dolor sitam est</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <p class="text-mouseOver">
+              Mangatus Landebitat occum, te et, ut dollore, excesequi ulparum fugitiunt adis estoresectat am et dolut fugitatem denihic ienturi tisque voluptae lations ecerciento imolest dolore eum doloria sperum faccullam quis inimus. Sque voluptae lations ecerciento imolest dolore eum doloria sperum faccullam quis inimus.</p>
+          </div>
+          <div class="col-sm-6">
+            <p>Mangatus Landebitat occum, te et, ut dollore, excesequi ulparum fugitiunt adis estoresectat am et dolut fugitatem denihic ienturi tisque voluptae lations ecerciento imolest dolore eum doloria sperum faccullam quis inimus. Sque voluptae.</p>
+          </div>
+          <div class="col-sm-6">
+            <p>Dandebitat occum, te et, ut dollore, excesequi ulparum fugitiunt adis estoresectat am et dolut fugitatem denihic ienturi tisque voluptae lations ecerciento imolest dolore eum doloria sperum faccullam quis inimus.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="competence-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2>Our competence</h2>
+          </div>
+        </div>
+        <div class="row square">
+          <div>
+            <img src="assets/images/icons/leidenschaft.svg">
+            <h3>Passion</h3>
+            <p>Mangatus Landebitat occum, dollore, excesequi ulparum fugitiunt adis estoresectat am et dolut ugitatem denihic ienturi tisque.</p>
+          </div>
+          <div>
+            <img src="assets/images/icons/auswahl.svg">
+            <h3>Experience</h3>
+            <p>Mangatus Landebitat occum, dollore, excesequi ulparum fugitiunt adis estoresectat am et dolut ugitatem denihic ienturi tisque.</p>
+          </div>
+          <div>
+            <img src="assets/images/icons/folien.svg">
+            <h3>Selection</h3>
+            <p>Mangatus Landebitat occum, dollore, excesequi ulparum fugitiunt adis estoresectat am et dolut ugitatem denihic ienturi tisque.</p>
+          </div>
+          <div>
+            <img src="assets/images/icons/garantie.svg">
+            <h3>Guarantee</h3>
+            <p>Mangatus Landebitat occum, dollore, excesequi ulparum fugitiunt adis estoresectat am et dolut ugitatem denihic ienturi tisque.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 square-box">
+            <a href="fahrzeuge.html">
+              <img src="assets/images/vehicles.jpg" class="img-cover">
+              <img src="assets/images/dynamic-element-small.png" class="left-corner">
+              <img src="assets/images/icons/fahrzeuge.png" class="icon-picker">
+            </a>
+          </div>
+          <div class="col-sm-6 square-box">
+            <a href="gebaude.html">
+              <img src="assets/images/cover.jpg" class="img-cover">
+              <img src="assets/images/dynamic-element-small.png" class="right-corner">
+              <img src="assets/images/icons/gebaeude.png" class="icon-picker">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="partners-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h2>Certification partners</h2>
+          </div>
+          <div class="col-sm-1">
+            <img src="assets/images/uv.png">
+          </div>
+          <div class="col-sm-1">
+            <img src="assets/images/TUV.png">
+          </div>
+          <div class="col-sm-2">
+            <img src="assets/images/ewfa.png">
+          </div>
+          <div class="col-sm-1">
+            <img src="assets/images/mpa_nrw.png">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map-section">
+    </section>
+
+    <section class="contact-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-7 float-left">
+            <h2>We are here for you</h2>
+            <hr>
+            <img src="assets/images/icons/pin.svg" class="no-align">
+            <p>K-Team<br>29 21208 Sremska Kamenica<br>Slavka Rodića 29</p>
+            <hr>
+            <img src="assets/images/icons/phone.svg">
+            <p>064 / 178-3256</p>
+            <hr>
+            <img src="assets/images/icons/fax.svg">
+            <p>XXX / XXXXXXXXX</p>
+            <hr>
+            <img src="assets/images/icons/email.svg">
+            <p>kristik57@gmail.com</p>
+            <hr>
+          </div>
+          <div class="col-sm-5 float-right">
+            <h2>Your request</h2>
+            <form action="#" method="post" class="contactForm">
+              <div class="row">
+                <div class="col-sm-12 wrap">
+                  <input type="text" name="contact_name" placeholder="Your Name">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 wrap">
+                  <input type="text" name="contact_email" placeholder="Your E-mail">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 wrap">
+                  <textarea name="contact_message" placeholder="Your Message" rows="6" cols="50"></textarea>
+                </div>
+              </div>
+              <button>
+                <p>Lorem ipsum dolor sitam</p>
+                <img src="assets/images/icons/arrow-button.svg">
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="row">
+        <div class="col-sm-9 float-left">
+          <p>Language selection:</p>
+          <p>Deutsch</p>
+          <p>English</p>
+          <p>Srpski</p>
+        </div>
+        <div class="col-sm-3 float-right">
+          <p><span>K-Team</span> Copyright &copy; 2018</p>
+        </div>
+      </div>
+    </footer>
+  <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>

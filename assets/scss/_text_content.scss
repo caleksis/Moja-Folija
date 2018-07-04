@@ -1,0 +1,9 @@
+.text-content{
+	text-align: justify;
+	position: relative;
+
+	.text-mouseOver{
+		color: $text_mouseOver;
+		font-weight: bold;
+	}
+}

@@ -1,0 +1,117 @@
+.slider-content{
+	max-width: 100%;
+	position: relative;
+	margin: 0 auto;
+	overflow: hidden;
+
+	/* Fading animation */
+
+	.slides{
+		height: 800px;
+		-webkit-animation-name: fade;
+		-webkit-animation-duration: 20s;
+		animation-name: fade;
+		animation-duration: 1.5s;
+	}
+
+	@-webkit-keyframes slides {
+		from {opacity: .4} 
+		to {opacity: 1}
+	}
+
+	@keyframes slides {
+		from {opacity: .4} 
+		to {opacity: 1}
+	}
+
+	.img-slider{
+		// position: absolute;
+		height: 900px;
+		// overflow: hidden;
+	}
+
+	.img-vehicle{
+		height: 600px;
+		transform: translateX(-20%);
+	}
+
+	.right-corner-element{
+		width: 45%;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	.slide-line{
+		position: absolute;
+		bottom: 0;
+		background-color: rgba(0,68,142, 0.8);
+		width: 100%;
+		margin: 0;
+
+		.container{
+			padding: 40px 0;
+		}
+
+		.wrapper{
+			padding-left: 120px;
+			opacity: 0.5;
+			filter: alpha(opacity=50);
+
+			&:active{
+				opacity: 1;
+				filter: alpha(opacity=100);
+			}
+
+			.icon-picker {
+				text-transform: uppercase;
+				cursor: pointer;
+				width: 95px;
+				margin: 0 20px;
+				display: inline-block;
+				// transition: background-color 0.6s ease;
+
+				.active {
+					opacity: 1;
+	 				filter: alpha(opacity=100);
+				}
+
+				img{
+					width: 100%;
+				}
+
+				p{
+					font-size: 20px;
+					display: block;
+					text-align: center;
+				}
+
+				// &:hover {
+						// opacity: 0.5;
+		 				// filter: alpha(opacity=50);
+		   		
+				// }
+			}
+		}
+
+		h2{
+			text-align: left;
+			margin: 0;
+		}
+
+		a{
+			color: #ffffff;
+			background-color: $text_color;
+			width: 50%;
+			padding: 10px 50px;
+			text-align: center;
+			text-transform: uppercase;
+			display: block;
+
+			&:hover{
+				text-decoration: none;
+				background-color: $text_mouseOver;
+			}
+		}		
+	}	
+}
