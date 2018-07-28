@@ -3,13 +3,17 @@
 h1, h2, h3{
 	color: #ffffff;
 	text-align: center;
+	margin: 0;
+	font-weight: 300;
+}
+
+h1{
+	font-size: 35px;
 }
 
 h2{
 	font-size: 30px;
 	padding-bottom: 20px;
-	margin-top: 0;
-	font-weight: 300;
 }
 
 h3{
@@ -34,3 +38,33 @@ section:nth-child(odd){
 section:nth-child(even){
 	background-color: $bg_color_light;
 }
+
+// go to top - button
+
+// .btt-link-is-visible{
+// 	transition: opacity .3s 0s;
+// 	transition: visibility 0s 0s;
+//     opacity: 1;
+//     visibility: visible;
+// }
+
+// .btt-link{
+// 	background-color: #fff;
+// 	bottom: 25px;
+// 	display: inline-block;
+// 	height: 38px;
+// 	width: 38px;
+// 	overflow: hidden;
+// 	position: fixed;
+// 	right: 25px;
+// 	text-align: center;
+// 	cursor: pointer;
+
+// 	img{
+// 		width: 18px;
+// 		height: 18px;
+// 		position: relative;
+// 		top: 5px;
+// 		text-align: center;
+// 	}
+// }

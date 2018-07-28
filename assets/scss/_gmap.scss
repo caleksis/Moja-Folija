@@ -1,9 +1,14 @@
-.map-section{
+.gmap-content{
 	position: relative;
-	background-image:url('../../assets/images/googlemap.png');
-	height: 400px;
-	width: 100%;
-	background-repeat:no-repeat;
-	background-size: cover;
-	background-position:center top;
+	line-height: 0;
+	
+	.gmap-overlay{
+		width: 100%;
+		height: 400px;
+		background: rgba(0,68,142, 0.6);
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 99;
+	}
 }

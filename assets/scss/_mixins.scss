@@ -21,12 +21,12 @@
 }
 
 @mixin tablet {
-  @media screen and (max-width: $veliki_break) {
+  @media screen and (max-width: $big_break) {
     @content;
   }
 }
 @mixin mobile {
-  @media screen and (max-width: $mali_break) {
+  @media screen and (max-width: $small_break) {
     @content;
   }
 }

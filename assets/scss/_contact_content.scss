@@ -9,7 +9,7 @@
 		margin: 0 30px;
 	}
 
-	.float-left{
+	.info{
 		padding-right: 50px;
 
 		img{
@@ -17,7 +17,7 @@
 			margin: 5px 0;
 		}
 
-		.no-align{
+		.top-align{
 			vertical-align: top; 
 		}
 
@@ -33,7 +33,6 @@
 			margin-bottom: 10px;
 			
 			input, textarea{
-				// margin: 5px 20px;
 				color: #ffffff;
 				padding: 10px 20px;
 				width: 100%;

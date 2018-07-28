@@ -1,40 +1,103 @@
 .topic-content{
 	position: relative;
+	
+	.img-cover{
+		width: 100%;
+	}
 
-	.square-box{
+	span{
+		opacity: 0.7;
+   		filter: alpha(opacity=70);
+		position: absolute;
 		width: 50%;
-		// position: absolute;
+		height: 100%;
+	}
 
-		.img-cover{
-			width: 100%;
-			// position: absolute;
+	.overlay-left{
+		top: 0;
+		bottom:0;
+		right: 15px;
+		background: linear-gradient(-110deg, $bg_color_dark 65%, transparent 20%);
+	}
+
+	.overlay-right{
+		top: 0;
+		bottom: 0;
+		left: 15px;
+		background: linear-gradient(70deg, $bg_color_dark 65%, transparent 20%);
+	}
+
+	.icon-picker-right, .icon-picker-left{
+		position: absolute;
+		width: 20%;
+		text-align: center;
+
+		img{
+			width: 100px;
+			margin-left: auto;
+			margin-right: auto;
 		}
 
-		.left-corner{
-			-moz-transform: rotate(180deg);
-			-webkit-transform: rotate(180deg);
-			-o-transform: rotate(180);
-			-ms-transform: rotate(180deg);
-			transform: rotate(180deg);
-			width: 50%;
-  			position: absolute;
-  			bottom: 0;
-  			left: 0;
-		}
-		
-		.right-corner{
-			width: 50%;
-  			position: absolute;
-  			top: 0;
-  			right: 0;
+		h3{
+			text-transform: uppercase;
+			font-size: 18px;
+			display: block;
+			margin: 0;
 		}
 
-		.icon-picker{
-			width: 95px;
+		.topic-link{
+			display: none;
+
+			img{
+				width: 10px;
+			}
+
+			p{
+				color: $text_mouseOver;
+				text-transform: lowercase;
+				font-weight: 700;
+				font-size: 14px;
+			}
 		}
 	}
 
-	// img{
-	// 	width: 100%;
-	// }
+	.icon-picker-left{
+		top: 80px;
+		right: 40px;
+	}
+
+	.icon-picker-right{
+		top: 80px;
+		left: 40px;
+	}
+
+	.left-corner{
+		-moz-transform: rotate(180deg);
+		-webkit-transform: rotate(180deg);
+		-o-transform: rotate(180);
+		-ms-transform: rotate(180deg);
+		transform: rotate(180deg);
+		width: 60%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding-right: 15px!important;
+	}
+	
+	.right-corner{
+		width: 60%;
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding-right: 15px!important;
+	}
+
+	a:hover .topic-link{
+		display: block;
+	}
+
+	a:hover span{
+		opacity: 0.9;
+   		filter: alpha(opacity=90);
+	}
 }
