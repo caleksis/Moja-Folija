@@ -1,6 +1,5 @@
 .services-content{
 	hr{
-		// position: absolute	;
 		background-color: $text_color;
 		width: 90%;
 		text-align: center;
@@ -8,7 +7,7 @@
 	}
 
 	h2{
-		margin-bottom: 30px;
+		padding-bottom: 50px;
 	}
 
 	h4{
@@ -22,12 +21,12 @@
 		text-align: justify;
 		font-size: 18px;
 		margin-top: 5px;
-		// float: right;
 	}
 
-	.col-sm-1{
+	.row > div{
 		padding: 0;
-		width: 50%;
+		margin: 0 auto;
+		width: 100%;
 	}
 
 	.wrapper{
@@ -35,7 +34,6 @@
 
 		.img-cover{
 			width: 100%;
-			// position: relative;
 		}
 
 		.right-corner, .right-corner-flip, .left-corner{

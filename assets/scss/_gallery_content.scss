@@ -2,16 +2,17 @@
 	text-align: center;
 	position: relative;
 	padding-top: 60px;
+	padding-bottom: 60px;
 
 	h2{
-		padding-bottom: 0;
+		padding-bottom: 40px;
 	}
 
 	.btt-left{
 		transform: rotateY( 180deg );
 	}
 
-	.container-fluid{
+	.container{
 		padding: 0;
 	}
 
@@ -71,7 +72,7 @@
         display: block;
         visibility: visible;
     }
-    
+
     /* right or prev direction */
     .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
     .carousel-item-prev.carousel-item-right + .carousel-item,

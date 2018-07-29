@@ -26,7 +26,7 @@ h1 {
 
 h2 {
   font-size: 30px;
-  padding-bottom: 20px; }
+  padding-bottom: 30px; }
 
 h3 {
   font-size: 18px;
@@ -232,8 +232,6 @@ header > .header-logo {
 --------------------------------------------------------------*/
 .competence-content {
   position: relative; }
-  .competence-content h2 {
-    margin-bottom: 10px; }
   .competence-content .scene {
     width: 200px;
     height: 260px;
@@ -474,7 +472,7 @@ footer {
   text-align: center;
   margin: 50px auto; }
 .services-content h2 {
-  margin-bottom: 30px; }
+  padding-bottom: 50px; }
 .services-content h4 {
   font-size: 28px;
   text-align: left;
@@ -484,9 +482,10 @@ footer {
   text-align: justify;
   font-size: 18px;
   margin-top: 5px; }
-.services-content .col-sm-1 {
+.services-content .row > div {
   padding: 0;
-  width: 50%; }
+  margin: 0 auto;
+  width: 100%; }
 .services-content .wrapper {
   position: relative; }
   .services-content .wrapper .img-cover {
@@ -510,12 +509,13 @@ footer {
 .gallery-content {
   text-align: center;
   position: relative;
-  padding-top: 60px; }
+  padding-top: 60px;
+  padding-bottom: 60px; }
   .gallery-content h2 {
-    padding-bottom: 0; }
+    padding-bottom: 40px; }
   .gallery-content .btt-left {
     transform: rotateY(180deg); }
-  .gallery-content .container-fluid {
+  .gallery-content .container {
     padding: 0; }
   .gallery-content .carousel-control-prev, .gallery-content .carousel-control-next {
     width: 12%; }

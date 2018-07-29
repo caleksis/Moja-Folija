@@ -100,8 +100,8 @@
           <img src="assets/images/vehicles-content-family1.jpg" class="img-cover">
           <img src="assets/images/icons/sun-protection-w.svg" class="right-corner">
         </div>
-        <div class="col-sm-1"></div>
-        <div class="col-sm-7">
+<!--         <div class="col-sm-1"></div>
+ -->        <div class="col-sm-7">
           <h4 data-bind="text: translation().vs_family_title"></h4>
           <p data-bind="text: translation().vs_family_text"></p>
         </div>
@@ -112,7 +112,7 @@
           <h4 data-bind="text: translation().vs_safety_title"></h4>
           <p data-bind="text: translation().vs_safety_text"></p>
         </div>
-        <div class="col-sm-1"></div>
+        <!-- <div class="col-sm-1"></div> -->
         <div class="col-sm-4 wrapper">
           <img src="assets/images/vehicles-content-safety1.jpg" class="img-cover">
           <img src="assets/images/icons/splitterschutz-w.svg" class="left-corner">
@@ -124,7 +124,7 @@
           <img src="assets/images/vehicles-content-comfort1.jpg" class="img-cover">
           <img src="assets/images/icons/car-w.svg" class="right-corner-flip">
         </div>
-        <div class="col-sm-1"></div>
+        <!-- <div class="col-sm-1"></div> -->
         <div class="col-sm-7">
           <h4 data-bind="text: translation().vs_comfort_title"></h4>
           <p data-bind="text: translation().vs_comfort_text"></p>
@@ -136,7 +136,7 @@
           <h4 data-bind="text: translation().vs_quality_title"></h4>
           <p data-bind="text: translation().vs_quality_text"></p>
         </div>
-        <div class="col-sm-1"></div>
+        <!-- <div class="col-sm-1"></div> -->
         <div class="col-sm-4 wrapper">
           <img src="assets/images/vehicles-content-quality1.jpg" class="img-cover">
           <img src="assets/images/icons/guarantee-w.svg" class="left-corner">
@@ -166,92 +166,90 @@
       </div>
     </section>
     <section class="gallery-content">
-      <div class="container-fluid">
-        <div id="gallery-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
-          <h2 data-bind="text: translation().vs_gallery_title"></h2>
-          <div class="carousel-inner row container mx-auto" role="listbox">
-            <div class="carousel-item col-md-4 active">
-               <div class="panel panel-default">
-                  <div class="panel-thumbnail">
-                    <a href="#" title="image 1" class="thumb">
-                      <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-family.jpg" alt="vehicles-content-family">
-                    </a>
-                  </div>
+      <h2 data-bind="text: translation().vs_gallery_title"></h2>
+      <div id="gallery-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner row container mx-auto" role="listbox">
+          <div class="carousel-item col-md-4 active">
+             <div class="panel panel-default">
+                <div class="panel-thumbnail">
+                  <a href="#" title="image 1" class="thumb">
+                    <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-family.jpg" alt="vehicles-content-family">
+                  </a>
                 </div>
-            </div>
-            <div class="carousel-item col-md-4">
-               <div class="panel panel-default">
-                  <div class="panel-thumbnail">
-                    <a href="#" title="image 3" class="thumb">
-                     <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-comfort.jpg" alt="slide 2">
-                    </a>
-                  </div>
-                </div>
-            </div>
-            <div class="carousel-item col-md-4">
-               <div class="panel panel-default">
-                  <div class="panel-thumbnail">
-                    <a href="#" title="image 4" class="thumb">
-                     <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-safety.jpg" alt="slide 3">
-                    </a>
-                  </div>
-                </div>
-            </div>
-            <div class="carousel-item col-md-4">
-                <div class="panel panel-default">
-                  <div class="panel-thumbnail">
-                    <a href="#" title="image 5" class="thumb">
-                     <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-quality.jpg" alt="slide 4">
-                    </a>
-                  </div>
-                </div>
-            </div>
-            <div class="carousel-item col-md-4">
-              <div class="panel panel-default">
-                  <div class="panel-thumbnail">
-                    <a href="#" title="image 6" class="thumb">
-                      <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-safety.jpg" alt="slide 5">
-                    </a>
-                  </div>
-                </div>
-            </div>
-            <div class="carousel-item col-md-4">
-               <div class="panel panel-default">
-                  <div class="panel-thumbnail">
-                    <a href="#" title="image 7" class="thumb">
-                      <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-family.jpg" alt="slide 6">
-                    </a>
-                  </div>
-                </div>
-            </div>
-            <div class="carousel-item col-md-4">
-               <div class="panel panel-default">
-                  <div class="panel-thumbnail">
-                    <a href="#" title="image 8" class="thumb">
-                      <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-quality.jpg" alt="slide 7">
-                    </a>
-                  </div>
-                </div>
-            </div>
-             <div class="carousel-item col-md-4">
-                <div class="panel panel-default">
-                  <div class="panel-thumbnail">
-                    <a href="#" title="image 2" class="thumb">
-                     <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-safety.jpg" alt="slide 8">
-                    </a>
-                  </div>
-                </div>
-            </div>
+              </div>
           </div>
-          <a class="carousel-control-prev" href="#gallery-carousel" role="button" data-slide="prev">
-              <img src="assets/images/icons/arrow-gallery-w.svg" class="btt-left">
-              <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#gallery-carousel" role="button" data-slide="next">
-              <img src="assets/images/icons/arrow-gallery-w.svg">
-              <span class="sr-only">Next</span>
-          </a>
+          <div class="carousel-item col-md-4">
+             <div class="panel panel-default">
+                <div class="panel-thumbnail">
+                  <a href="#" title="image 3" class="thumb">
+                   <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-comfort.jpg" alt="slide 2">
+                  </a>
+                </div>
+              </div>
+          </div>
+          <div class="carousel-item col-md-4">
+             <div class="panel panel-default">
+                <div class="panel-thumbnail">
+                  <a href="#" title="image 4" class="thumb">
+                   <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-safety.jpg" alt="slide 3">
+                  </a>
+                </div>
+              </div>
+          </div>
+          <div class="carousel-item col-md-4">
+              <div class="panel panel-default">
+                <div class="panel-thumbnail">
+                  <a href="#" title="image 5" class="thumb">
+                   <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-quality.jpg" alt="slide 4">
+                  </a>
+                </div>
+              </div>
+          </div>
+          <div class="carousel-item col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-thumbnail">
+                  <a href="#" title="image 6" class="thumb">
+                    <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-safety.jpg" alt="slide 5">
+                  </a>
+                </div>
+              </div>
+          </div>
+          <div class="carousel-item col-md-4">
+             <div class="panel panel-default">
+                <div class="panel-thumbnail">
+                  <a href="#" title="image 7" class="thumb">
+                    <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-family.jpg" alt="slide 6">
+                  </a>
+                </div>
+              </div>
+          </div>
+          <div class="carousel-item col-md-4">
+             <div class="panel panel-default">
+                <div class="panel-thumbnail">
+                  <a href="#" title="image 8" class="thumb">
+                    <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-quality.jpg" alt="slide 7">
+                  </a>
+                </div>
+              </div>
+          </div>
+           <div class="carousel-item col-md-4">
+              <div class="panel panel-default">
+                <div class="panel-thumbnail">
+                  <a href="#" title="image 2" class="thumb">
+                   <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-safety.jpg" alt="slide 8">
+                  </a>
+                </div>
+              </div>
+          </div>
         </div>
+        <a class="carousel-control-prev" href="#gallery-carousel" role="button" data-slide="prev">
+            <img src="assets/images/icons/arrow-gallery-w.svg" class="btt-left">
+            <!-- <span class="sr-only">Previous</span> -->
+        </a>
+        <a class="carousel-control-next" href="#gallery-carousel" role="button" data-slide="next">
+            <img src="assets/images/icons/arrow-gallery-w.svg">
+            <!-- <span class="sr-only">Next</span> -->
+        </a>
       </div>
     </section>
     <section class="gmap-content">
