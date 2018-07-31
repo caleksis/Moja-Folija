@@ -28,6 +28,9 @@
 	 	height: 100%;
 	    width: 100%;
 	    -webkit-backface-visibility: hidden;
+	    -moz-backface-visibility: hidden;
+	    -o-backface-visibility: hidden;
+	    backface-visibility: hidden;
 	}
 
 	.card__face--front{
@@ -49,7 +52,6 @@
 	.card__face--back{
 		transform: rotateY( 180deg );
 		background-color: $bg_blue_color;
-		-webkit-backface-visibility: hidden;
 		padding: 20px 10px;
 
 		img{
@@ -67,6 +69,7 @@
 		p{
 			text-align: center;
 			font-size: 14px;
+			color: #fff;
 		}
 	}
 

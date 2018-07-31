@@ -1,4 +1,4 @@
-header > .header-logo {
+.header-logo {
 	background-color: $bg_color_light;
 	padding: 20px;
 
@@ -10,7 +10,6 @@ header > .header-logo {
 	}
 
 	.menu-button{
-		top:20px;
 		display: none;
 	}
 }
@@ -20,31 +19,38 @@ header > .header-logo {
 	height: 48px;
 	background-color: $bg_color_dark;
 	text-align: center;
-	display: inline-block;
 
-	ul{ 
+	.menu{
 		display: inline-block;
-		margin: 0;
-		padding: 10px;
-		text-transform: uppercase;
-		font-size: 20px;
 
-		li{
+		ul{ 
 			display: inline-block;
-			margin: 0 10px;
-			color: $text_color;
+			margin: 0 auto;
+			padding: 10px;
+			text-transform: uppercase;
+			font-size: 20px;
 
-			a{
-				text-decoration: none;
+			li{
+				display: inline-block;
+				margin: 0 15px;
 				color: $text_color;
 				cursor: pointer;
 
-				&:hover{
-					color: $text_mouseOver;
+				img{
+					display: none;
 				}
 
-				&.active{
-					color: $text_mouseOver;
+				a{
+					text-decoration: none;
+					color: $text_color;
+
+					&:hover{
+						color: $text_mouseOver;
+					}
+
+					&.active{
+						color: $text_mouseOver;
+					}
 				}
 			}
 		}
@@ -52,7 +58,9 @@ header > .header-logo {
 
 	.dropdown{
 		display: inline-block;
-		font-size: 14px;
+		position: absolute;
+		padding-top: 12px;
+		padding-left: 60px;
 
 		.dropbtn{
 			background-color: transparent;
@@ -61,12 +69,14 @@ header > .header-logo {
 
 			img{
 				background-color: transparent;
-				width: 18px;
+				height: 20px;
+				display: inline-block;
 			}
 
 			p{
 				color: $text_color;
 				margin-bottom: 0;
+				font-size: 14px;
 			}
 
 			&:focus{
@@ -89,6 +99,7 @@ header > .header-logo {
     			text-decoration: none;
     			display: block;
     			margin: 0;
+    			color: $text_color;
 
     			&:hover{
     				background-color: #373737;
@@ -103,7 +114,8 @@ header > .header-logo {
 			.dropdown-content{
 				display: block;
 				text-align: left;
-				padding-top: 9px;
+				padding-top: 12px;
+				cursor: pointer;
 			}
 		}
 	}

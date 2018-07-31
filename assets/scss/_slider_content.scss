@@ -3,17 +3,26 @@
 	position: relative;
 
 	/* Fading animation */
-
 	.fade{
-		-webkit-animation-name: fade;
-	  	-webkit-animation-duration: 1.5s;
-	 	animation-name: fade;
-	  	animation-duration: 1.5s;
+		-webkit-animation: fade 1.5s;
+		-moz-animation: fade 1.5s;
+		-o-animation: fade 1.5s;
+		animation: fade 1.5s;
 	  	opacity: 1;
 	}
 
 	@-webkit-keyframes fade {
 		from {opacity: .4} 
+		to {opacity: 1}
+	}
+
+	@-moz-keyframes fade {
+		from {opacity: .4}
+		to {opacity: 1}
+	}
+
+	@-o-keyframes fade {
+		from {opacity: .4}
 		to {opacity: 1}
 	}
 
@@ -45,13 +54,14 @@
 		}
 
 		.col-sm-4{
-			padding-left: 80px;
+			text-align: center;
 		}
 
 		.icon-picker {
 			text-transform: uppercase;
 			cursor: pointer;
-			margin: 0 10px;
+			margin: 0 auto;
+			padding-left: 30px;
 			display: inline-block;
 			opacity: 0.5;
 			filter: alpha(opacity=50);
@@ -84,15 +94,30 @@
 			h2{
 				text-align: left;
 				margin: 0;
-				-webkit-animation: mymove 3s; /* Safari 4.0 - 8.0 */
+				padding-bottom: 20px;
+				-webkit-animation: mymove 3s;
+				-moz-animation: mymove 3s;
+				-o-animation: mymove 3s;
 	   			animation: mymove 3s;
 	   			-webkit-animation-timing-function: ease;
+	   			-moz-animation-timing-function: ease;
+	   			-o-animation-timing-function: ease;
 	   			animation-timing-function: ease;
 	   			position: relative;
 			}	
 
 			@-webkit-keyframes mymove {
 			    from {right: -50px;}
+			    to {right: 0px;}
+			}
+
+			@-moz-keyframes mymove{
+				from {right: -50px;}
+			    to {right: 0px;}
+			}
+
+			@-o-keyframes mymove{
+				from {right: -50px;}
 			    to {right: 0px;}
 			}
 			
@@ -113,6 +138,10 @@
 				&:hover{
 					text-decoration: none;
 					background-color: $text_mouseOver;
+				}
+
+				&:focus{
+					outline: 0;
 				}
 			}
 		}

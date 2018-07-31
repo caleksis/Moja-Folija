@@ -22,17 +22,24 @@
 	<header>
     <div class="header-logo">
       <img src="assets/images/logo_mojafolija.png" alt="Moja Folija">
+      <button class="menu-button" id="open-button" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
     <div class="main-navbar">
-      <ul class="nav navbar-nav">
-        <li><a href="index.html" data-bind="text: translation().home"></a></li>
-        <li><a href="fahrzeuge.html" data-bind="text: translation().vehicles" class="active"></a></li>
-        <li><a href="gebaude.html" data-bind="text: translation().buildings"></a></li>
-        <li><a href="#about" data-bind="text: translation().about_us"></a></li>
-        <li><a href="#references" data-bind="text: translation().references"></a></li>
-      </ul>
+      <nav class="menu">
+        <ul class="nav navbar-nav">
+          <li><img src="assets/images/arrow-rw1.png"><a href="index.html" data-bind="text: translation().home" class="active"></a></li>
+          <li><img src="assets/images/arrow-rw1.png"><a href="vehicles.html" data-bind="text: translation().vehicles"></a></li>
+          <li><img src="assets/images/arrow-rw1.png"><a href="buildings.html" data-bind="text: translation().buildings"></a></li>
+          <li><img src="assets/images/arrow-rw1.png"><a href="#about" data-bind="text: translation().about_us"></a></li>
+          <li><img src="assets/images/arrow-rw1.png"><a href="#references" data-bind="text: translation().references"></a></li>
+        </ul>
+      </nav>
       <div class="dropdown" id="myDropdown">
-        <button class="dropbtn" >
+        <button class="dropbtn">
           <img src="assets/images/icons/arrow-down.svg">
           <p id="testa">Deutsch</p>
         </button>
@@ -42,12 +49,11 @@
           <li data-bind="click: change.bind($data, 'Sr')">Srpski</li>
         </ul>
       </div>
-      </div>
+    </div>
   </header>
-
   <section class="slider-content">
   	<div class="slides">
-    	<img src="assets/images/vehicles-header.jpg" class="img-slider">
+    	<img src="assets/images/vehicles-header.jpg" class="img-slider" alt="vozila">
     	<img src="assets/images/dynamic-element.png" class="right-corner-element">
     	<div class="slide-line">
           <div class="container">
@@ -60,7 +66,6 @@
       </div>
     </div>
   </section>
-
   <section class="advantages-content">
     <div class="container">
       <div class="row">
@@ -70,20 +75,20 @@
       </div>
       <div class="row wrapper">
         <div class="col-sm-3">
-          <img src="assets/images/icons/sun-protection-w.svg">
-          <p>Hitzereduktion </br>und UV-Schutz</p>
+          <img src="assets/images/icons/sun-protection-w.svg" alt="Zaštita od sunca">
+          <p data-bind="text: translation().vs_sun_protection"></p>
         </div>
         <div class="col-sm-3">
-          <img src="assets/images/icons/privacy-protection-w.svg">
-          <p>Sicht- und </br>Blendschutz</p>
+          <img src="assets/images/icons/privacy-protection-w.svg" alt="Zaštita privatnosti">
+          <p data-bind="text: translation().vs_privacy_protection"></p>
         </div>
         <div class="col-sm-3">
-          <img src="assets/images/icons/splitterschutz-w.svg">
-          <p>Effektiver </br>Splitterschutz</p>
+          <img src="assets/images/icons/splitterschutz-w.svg" alt="Splinter zaštita">
+          <p data-bind="text: translation().vs_splinter_protection"></p>
         </div>
         <div class="col-sm-3">
-          <img src="assets/images/icons/car-w.svg">
-          <p>Individueller Tönungsgrad </br>und Moderne Ästhetik</p>
+          <img src="assets/images/icons/car-w.svg" alt="Toniranje i estetika">
+          <p data-bind="text: translation().vs_tinting_aesthetics"></p>
         </div>
       </div>
     </div>
@@ -97,11 +102,10 @@
       </div>
       <div class="row">
         <div class="col-sm-4 wrapper">
-          <img src="assets/images/vehicles-content-family1.jpg" class="img-cover">
+          <img src="assets/images/vehicles-content-family1.jpg" class="img-cover" alt="porodica">
           <img src="assets/images/icons/sun-protection-w.svg" class="right-corner">
         </div>
-<!--         <div class="col-sm-1"></div>
- -->        <div class="col-sm-7">
+        <div class="col-sm-7">
           <h4 data-bind="text: translation().vs_family_title"></h4>
           <p data-bind="text: translation().vs_family_text"></p>
         </div>
@@ -112,19 +116,17 @@
           <h4 data-bind="text: translation().vs_safety_title"></h4>
           <p data-bind="text: translation().vs_safety_text"></p>
         </div>
-        <!-- <div class="col-sm-1"></div> -->
         <div class="col-sm-4 wrapper">
-          <img src="assets/images/vehicles-content-safety1.jpg" class="img-cover">
+          <img src="assets/images/vehicles-content-safety1.jpg" class="img-cover" alt="sigurnost">
           <img src="assets/images/icons/splitterschutz-w.svg" class="left-corner">
         </div>
       </div>
       <hr>
       <div class="row">
         <div class="col-sm-4 wrapper">
-          <img src="assets/images/vehicles-content-comfort1.jpg" class="img-cover">
+          <img src="assets/images/vehicles-content-comfort1.jpg" class="img-cover" alt="udobnost">
           <img src="assets/images/icons/car-w.svg" class="right-corner-flip">
         </div>
-        <!-- <div class="col-sm-1"></div> -->
         <div class="col-sm-7">
           <h4 data-bind="text: translation().vs_comfort_title"></h4>
           <p data-bind="text: translation().vs_comfort_text"></p>
@@ -136,9 +138,8 @@
           <h4 data-bind="text: translation().vs_quality_title"></h4>
           <p data-bind="text: translation().vs_quality_text"></p>
         </div>
-        <!-- <div class="col-sm-1"></div> -->
         <div class="col-sm-4 wrapper">
-          <img src="assets/images/vehicles-content-quality1.jpg" class="img-cover">
+          <img src="assets/images/vehicles-content-quality1.jpg" class="img-cover" alt="kvalitet">
           <img src="assets/images/icons/guarantee-w.svg" class="left-corner">
         </div>
       </div>
@@ -179,10 +180,19 @@
               </div>
           </div>
           <div class="carousel-item col-md-4">
+              <div class="panel panel-default">
+                <div class="panel-thumbnail">
+                  <a href="#" title="image 2" class="thumb">
+                   <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-safety.jpg" alt="slide 8">
+                  </a>
+                </div>
+              </div>
+          </div>
+          <div class="carousel-item col-md-4">
              <div class="panel panel-default">
                 <div class="panel-thumbnail">
                   <a href="#" title="image 3" class="thumb">
-                   <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-comfort.jpg" alt="slide 2">
+                   <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-comfort.jpg" alt="slide 3">
                   </a>
                 </div>
               </div>
@@ -191,7 +201,7 @@
              <div class="panel panel-default">
                 <div class="panel-thumbnail">
                   <a href="#" title="image 4" class="thumb">
-                   <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-safety.jpg" alt="slide 3">
+                   <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-safety.jpg" alt="slide 4">
                   </a>
                 </div>
               </div>
@@ -200,7 +210,7 @@
               <div class="panel panel-default">
                 <div class="panel-thumbnail">
                   <a href="#" title="image 5" class="thumb">
-                   <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-quality.jpg" alt="slide 4">
+                   <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-quality.jpg" alt="slide 5">
                   </a>
                 </div>
               </div>
@@ -209,7 +219,7 @@
             <div class="panel panel-default">
                 <div class="panel-thumbnail">
                   <a href="#" title="image 6" class="thumb">
-                    <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-safety.jpg" alt="slide 5">
+                    <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-safety.jpg" alt="slide 6">
                   </a>
                 </div>
               </div>
@@ -218,7 +228,7 @@
              <div class="panel panel-default">
                 <div class="panel-thumbnail">
                   <a href="#" title="image 7" class="thumb">
-                    <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-family.jpg" alt="slide 6">
+                    <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-family.jpg" alt="slide 7">
                   </a>
                 </div>
               </div>
@@ -227,16 +237,7 @@
              <div class="panel panel-default">
                 <div class="panel-thumbnail">
                   <a href="#" title="image 8" class="thumb">
-                    <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-quality.jpg" alt="slide 7">
-                  </a>
-                </div>
-              </div>
-          </div>
-           <div class="carousel-item col-md-4">
-              <div class="panel panel-default">
-                <div class="panel-thumbnail">
-                  <a href="#" title="image 2" class="thumb">
-                   <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-safety.jpg" alt="slide 8">
+                    <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-quality.jpg" alt="slide 8">
                   </a>
                 </div>
               </div>
@@ -266,7 +267,7 @@
             <p>K-Team<br>29 21208 Sremska Kamenica<br>Slavka Rodića 29</p>
             <hr>
             <img src="assets/images/icons/phone.svg">
-            <p>064 / 178-3256</p>
+            <p x-ms-format-detection="none">064 / 178-3256</p>
             <hr>
             <img src="assets/images/icons/email.svg">
             <p>kristik57@gmail.com</p>
@@ -304,9 +305,11 @@
         <div class="row">
           <div class="col-sm-9">
             <p data-bind="text: translation().lang_selector"></p>
-            <p data-bind="click: change.bind($data, 'De'), text: translation().german">Deutsch</p>
-            <p data-bind="click: change.bind($data, 'En'), text: translation().english">English</p>
-            <p data-bind="click: change.bind($data, 'Sr'), text: translation().serbian">Srpski</p>
+            <ul class="dropdown-content" name="lang" id="testul">
+              <li data-bind="click: change.bind($data, 'De'), text: translation().german"></li>
+              <li data-bind="click: change.bind($data, 'En'), text: translation().english"></li>
+              <li data-bind="click: change.bind($data, 'Sr'), text: translation().serbian"></li>
+            </ul>
           </div>
           <div class="col-sm-3">
             <p><span>K-Team</span> Copyright &copy; 2018</p>

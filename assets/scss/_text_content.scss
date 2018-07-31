@@ -2,6 +2,10 @@
 	text-align: justify;
 	position: relative;
 
+	p{
+		color: #fff;
+	}
+
 	.text-mouseOver{
 		color: $text_mouseOver;
 		font-weight: bold;

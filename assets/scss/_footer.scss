@@ -10,10 +10,9 @@ footer{
 		}
 
 		p, li{
-			padding-right: 20px;
 			margin: 20px 0;
 			display: inline-block;
-			color: #fff!important;
+			color: $light_text_color;
 		}
 
 		span{
@@ -22,6 +21,11 @@ footer{
 
 		li{
 			cursor: pointer;
-		}	
+			padding-left: 20px;
+		}
+
+		.col-sm-3{
+			text-align: right;
+		}
 	}
 }
