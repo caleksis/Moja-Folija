@@ -675,9 +675,8 @@ footer {
       border: 0;
       color: transparent;
       cursor: pointer;
-      z-index: 999;
-      height: 65px;
-      width: 65px;
+      height: 62px;
+      width: 62px;
       position: absolute;
       outline: none;
       top: 25px;
@@ -686,66 +685,56 @@ footer {
         display: block;
         position: absolute;
         height: 3px;
-        width: 32px;
+        width: 31px;
         background-color: #cdcdcd;
         opacity: 1;
-        left: 16px; }
+        left: 15px; }
         header .menu-button span:first-child {
-          top: 20px;
+          top: 18px;
           transform-origin: left center; }
         header .menu-button span:nth-child(2) {
-          top: 31px; }
+          top: 29px; }
         header .menu-button span:nth-child(3) {
-          bottom: 20px; }
+          bottom: 18px; }
       header .menu-button:hover {
         background-color: #00448e; }
       header .menu-button:focus {
         outline: none; }
     header .main-navbar {
-      background-color: #00448e;
+      background-color: #373737;
       width: 100%;
-      padding: 0 40px;
-      height: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      line-height: 1;
       z-index: 1001;
-      line-height: 1.785714285;
       position: absolute;
-      right: 90px;
-      overflow: visible; }
+      top: 100px; }
       header .main-navbar .menu {
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-        display: block;
-        z-index: 1000; }
+        display: block; }
         header .main-navbar .menu ul {
-          text-transform: none;
-          font-size: 25px;
-          font-weight: 300;
-          letter-spacing: 2px;
-          transform: translate3d(0, 100%, 0);
-          transition: transform 0s cubic-bezier(0.7, 0, 0.3, 1) 0.4s; }
+          width: 100%;
+          padding: 30px; }
           header .main-navbar .menu ul li {
             display: block;
-            padding-top: 8px;
-            padding-bottom: 8px;
-            z-index: 3;
             text-align: left;
-            position: relative; }
-            header .main-navbar .menu ul li:hover {
-              opacity: 0.7; }
-            header .main-navbar .menu ul li .active {
-              color: #fff; }
-            header .main-navbar .menu ul li img {
-              display: inline-block;
-              width: 20px;
-              vertical-align: middle;
-              margin-bottom: 5px;
-              margin-right: 10px;
-              margin-left: 10px; }
+            padding: 0px 6px;
+            margin: 0;
+            width: 100%;
+            border-top: thin solid #cdcdcd; }
+            header .main-navbar .menu ul li:last-child {
+              border-bottom: thin solid #cdcdcd; }
             header .main-navbar .menu ul li a {
-              color: #fff; }
-              header .main-navbar .menu ul li a:hover {
-                color: #fff; }
+              color: #fff;
+              margin-top: 0;
+              margin-bottom: 2px;
+              text-transform: none;
+              width: 100%;
+              display: block;
+              padding: 13px 11px;
+              transition: all 0.5s;
+              font-weight: 300;
+              line-height: 1; }
       header .main-navbar .dropdown {
         display: none; }
 
@@ -759,8 +748,7 @@ footer {
       background-color: #2e2e2e; }
     header.show-menu .menu-button span:first-child {
       transform: rotate(45deg);
-      top: 20px;
-      left: 20px; }
+      left: 19px; }
     header.show-menu .menu-button span:nth-child(2) {
       display: none; }
     header.show-menu .menu-button span:nth-child(3) {
@@ -773,11 +761,7 @@ footer {
       transform: translateZ(0);
       transition: transform 0.8s cubic-bezier(0.7, 0, 0.3, 1); }
       header.show-menu .main-navbar ul li {
-        transition-duration: .1s linear;
-        transition-timing-function: linear; }
-        header.show-menu .main-navbar ul li:hover img {
-          margin-left: 0px;
-          margin-right: 20px; }
+        transition-duration: .1s linear; }
 
   .competence-content .scene {
     height: 300px; }
@@ -793,5 +777,61 @@ footer {
     max-width: 100%; }
   .gallery-content .carousel-inner {
     max-height: 289px; } }
+@media screen and (max-width: 650px) {
+  header .main-navbar {
+    background-color: #00448e;
+    width: 90%;
+    padding: 0 40px;
+    height: 100%;
+    line-height: 1.785714285;
+    right: 87px;
+    top: 0; }
+    header .main-navbar .menu {
+      position: relative;
+      top: 30%;
+      transform: translateY(-50%); }
+      header .main-navbar .menu ul {
+        text-transform: none;
+        padding: 10px;
+        font-size: 25px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        transform: translate3d(0, 100%, 0);
+        transition: transform 0s cubic-bezier(0.7, 0, 0.3, 1) 0.4s; }
+        header .main-navbar .menu ul li {
+          padding-top: 8px;
+          padding-bottom: 8px;
+          z-index: 3;
+          position: relative;
+          border: none !important;
+          margin: 0 15px; }
+          header .main-navbar .menu ul li:hover {
+            opacity: 0.7; }
+          header .main-navbar .menu ul li .active {
+            color: #fff; }
+          header .main-navbar .menu ul li img {
+            display: inline-block;
+            width: 20px;
+            vertical-align: middle;
+            margin-bottom: 5px;
+            margin-right: 10px;
+            margin-left: 10px; }
+          header .main-navbar .menu ul li a {
+            display: inline-block;
+            width: auto; }
+          header .main-navbar .menu ul li a:hover {
+            color: #fff; }
+
+  header.show-menu .main-navbar {
+    display: block;
+    transition: transform 0.4s cubic-bezier(0.7, 0, 0.3, 1) 0.15s; }
+    header.show-menu .main-navbar ul {
+      transform: translateZ(0);
+      transition: transform 0.8s cubic-bezier(0.7, 0, 0.3, 1); }
+      header.show-menu .main-navbar ul li {
+        transition-duration: 2s linear; }
+        header.show-menu .main-navbar ul li:hover img {
+          margin-left: 0px;
+          margin-right: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
