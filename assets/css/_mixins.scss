@@ -1,0 +1,44 @@
+@mixin main {
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', Helvetica, Arial, sans-serif;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+@mixin clearfix {
+  &:before, &:after {
+    content: "";
+      display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin sm-desktop{
+  @media screen and (max-width: $big_break) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: $middle_break) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media screen and (max-width: $small_break) {
+    @content;
+  }
+}
+
+@mixin xs_mobile {
+  @media screen and (max-width: $xs_small_break) {
+    @content;
+  }
+}

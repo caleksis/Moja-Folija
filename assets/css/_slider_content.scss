@@ -1,0 +1,154 @@
+.slider-content{
+	width: 100%;
+	position: relative;
+	/* Fading animation */
+	.fade{
+		-webkit-animation: fade 1.5s;
+		-moz-animation: fade 1.5s;
+		-o-animation: fade 1.5s;
+		animation: fade 1.5s;
+	  	opacity: 1;
+	}
+
+	@-webkit-keyframes fade {
+		from {opacity: .4} 
+		to {opacity: 1}
+	}
+
+	@-moz-keyframes fade {
+		from {opacity: .4}
+		to {opacity: 1}
+	}
+
+	@-o-keyframes fade {
+		from {opacity: .4}
+		to {opacity: 1}
+	}
+
+	@keyframes fade {
+		from {opacity: .4} 
+		to {opacity: 1}
+	}
+
+	.img-slider{
+		width: 100%;
+	}
+
+	.right-corner-element{
+		width: 45%;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	.slide-line{
+		position: absolute;
+		bottom: 0;
+		background-color: rgba(0,68,142, 0.8);
+		width: 100%;
+		max-height: 250px;
+
+		.containers{
+			padding: 40px 0;
+		}
+
+		.col-md-5{
+			text-align: center;
+		}
+
+		.icon-picker {
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+			text-transform: uppercase;
+			cursor: pointer;
+			margin: 0 auto;
+			display: inline-block;
+			opacity: 0.5;
+			filter: alpha(opacity=50);
+			text-align: center;
+
+			&:last-child{
+				padding-left: 30px;
+			}
+
+			img{
+				margin-right: auto;
+				margin-left: auto;
+				width: 80px;
+				display: block;
+			}
+
+			p{
+				font-size: 20px;
+				margin: 0; 
+			}
+
+			&:hover{
+				opacity: 1;
+ 				filter: alpha(opacity=100);
+			}
+		}
+
+		.active{
+			opacity: 1;
+			filter: alpha(opacity=100);
+		}
+
+		.textBottom{
+			h2{
+				text-align: left;
+				margin: 0;
+				padding-bottom: 20px;
+				-webkit-animation: mymove 3s;
+				-moz-animation: mymove 3s;
+				-o-animation: mymove 3s;
+	   			animation: mymove 3s;
+	   			-webkit-animation-timing-function: ease;
+	   			-moz-animation-timing-function: ease;
+	   			-o-animation-timing-function: ease;
+	   			animation-timing-function: ease;
+	   			position: relative;
+			}	
+
+			@-webkit-keyframes mymove {
+			    from {right: -50px;}
+			    to {right: 0px;}
+			}
+
+			@-moz-keyframes mymove{
+				from {right: -50px;}
+			    to {right: 0px;}
+			}
+
+			@-o-keyframes mymove{
+				from {right: -50px;}
+			    to {right: 0px;}
+			}
+			
+			@keyframes mymove {
+			    from {right: -50px;}
+			    to {right: 0px;}
+			}
+
+			a{
+				color: #ffffff;
+				background-color: $text_color;
+				width: 300px;
+				padding: 10px 50px;
+				text-align: center;
+				text-transform: uppercase;
+				display: block;
+
+				&:hover{
+					text-decoration: none;
+					background-color: $text_mouseOver;
+				}
+
+				&:focus{
+					outline: 0;
+				}
+			}
+		}
+	}		
+}

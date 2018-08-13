@@ -5,18 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<title>Vehicles</title>
-	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-	<!--  
-  Stylesheets
-  =============================================
-  -->
+	<link rel="shortcut icon" href="assets/images/favicon1.ico" type="image/icon">
   <!-- Default stylesheets-->
   <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Template specific stylesheets-->
-  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
   <!-- Main stylesheet and color file-->
-  <link href="assets/scss/style.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
 	<header>
@@ -31,11 +24,11 @@
     <div class="main-navbar">
       <nav class="menu">
         <ul class="nav navbar-nav">
-          <!-- <li><img src="assets/images/arrow-rw1.png"><a href="index.html" data-bind="text: translation().home"></a></li> -->
-          <li><img src="assets/images/arrow-rw1.png"><a href="vehicles.html" data-bind="text: translation().vehicles" class="active"></a></li>
-          <li><img src="assets/images/arrow-rw1.png"><a href="buildings.html" data-bind="text: translation().buildings"></a></li>
-          <li><img src="assets/images/arrow-rw1.png"><a href="#about" data-bind="text: translation().about_us"></a></li>
-          <li><img src="assets/images/arrow-rw1.png"><a href="#references" data-bind="text: translation().references"></a></li>
+          <li><img src="assets/images/arrow-rw.png"><a href="index.html" data-bind="text: translation().home"></a></li>
+          <li><img src="assets/images/arrow-rw.png"><a href="vehicles.html" data-bind="text: translation().vehicles" class="active"></a></li>
+          <li><img src="assets/images/arrow-rw.png"><a href="buildings.html" data-bind="text: translation().buildings"></a></li>
+          <li><img src="assets/images/arrow-rw.png"><a href="#about" data-bind="text: translation().about_us"></a></li>
+          <li><img src="assets/images/arrow-rw.png"><a href="#references" data-bind="text: translation().references"></a></li>
         </ul>
       </nav>
       <div class="dropdown" id="myDropdown">
@@ -43,7 +36,7 @@
           <img src="assets/images/icons/arrow-down.svg">
           <p id="testa">Deutsch</p>
         </button>
-        <ul name="lang" class="dropdown-content" id="testul">
+        <ul name="language" class="dropdown-content" id="testul">
           <li data-bind="click: change.bind($data, 'De')">Deutsch</li>
           <li data-bind="click: change.bind($data, 'En')">English</li>
           <li data-bind="click: change.bind($data, 'Sr')">Srpski</li>
@@ -56,7 +49,7 @@
     	<img src="assets/images/vehicles-header.jpg" class="img-slider" alt="vozila">
     	<img src="assets/images/dynamic-element.png" class="right-corner-element">
     	<div class="slide-line">
-          <div class="container">
+          <div class="containers">
             <div class="row">
               <div class="col-sm-12">
                 <h1 data-bind="text: translation().vs_title"></h1>
@@ -67,26 +60,26 @@
     </div>
   </section>
   <section class="advantages-content">
-    <div class="container">
+    <div class="containers">
       <div class="row">
         <div class="col-sm-12">
           <p data-bind="text: translation().vs_advantages"></p>
         </div>
       </div>
       <div class="row wrapper">
-        <div class="col-sm-3">
+        <div class="col-md-3 col-sm-6 col-6">
           <img src="assets/images/icons/sun-protection-w.svg" alt="Zaštita od sunca">
           <p data-bind="text: translation().vs_sun_protection"></p>
         </div>
-        <div class="col-sm-3">
+        <div class="col-md-3 col-sm-6 col-6">
           <img src="assets/images/icons/privacy-protection-w.svg" alt="Zaštita privatnosti">
           <p data-bind="text: translation().vs_privacy_protection"></p>
         </div>
-        <div class="col-sm-3">
+        <div class="col-md-3 col-sm-6 col-6">
           <img src="assets/images/icons/splitterschutz-w.svg" alt="Splinter zaštita">
           <p data-bind="text: translation().vs_splinter_protection"></p>
         </div>
-        <div class="col-sm-3">
+        <div class="col-md-3 col-sm-6 col-6">
           <img src="assets/images/icons/car-w.svg" alt="Toniranje i estetika">
           <p data-bind="text: translation().vs_tinting_aesthetics"></p>
         </div>
@@ -94,51 +87,51 @@
     </div>
   </section>
   <section class="services-content">
-    <div class="container">
+    <div class="containers">
       <div class="row">
         <div class="col-sm-12">
           <h2 data-bind="text: translation().vs_services_title"></h2>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-4 wrapper">
+        <div class="col-md-4 col-sm-12 wrapper">
           <img src="assets/images/vehicles-content-family1.jpg" class="img-cover" alt="porodica">
           <img src="assets/images/icons/sun-protection-w.svg" class="right-corner">
         </div>
-        <div class="col-sm-7">
+        <div class="col-md-7 col-sm-12">
           <h4 data-bind="text: translation().vs_family_title"></h4>
           <p data-bind="text: translation().vs_family_text"></p>
         </div>
       </div>
-      <hr>
+      <hr class="smallHr">
       <div class="row">
-        <div class="col-sm-7">
+        <div class="col-md-7 col-sm-12">
           <h4 data-bind="text: translation().vs_safety_title"></h4>
           <p data-bind="text: translation().vs_safety_text"></p>
         </div>
-        <div class="col-sm-4 wrapper">
+        <div class="col-md-4 col-sm-12 wrapper">
           <img src="assets/images/vehicles-content-safety1.jpg" class="img-cover" alt="sigurnost">
           <img src="assets/images/icons/splitterschutz-w.svg" class="left-corner">
         </div>
       </div>
       <hr>
       <div class="row">
-        <div class="col-sm-4 wrapper">
+        <div class="col-md-4 col-sm-12 wrapper">
           <img src="assets/images/vehicles-content-comfort1.jpg" class="img-cover" alt="udobnost">
           <img src="assets/images/icons/car-w.svg" class="right-corner-flip">
         </div>
-        <div class="col-sm-7">
+        <div class="col-md-7 col-sm-12">
           <h4 data-bind="text: translation().vs_comfort_title"></h4>
           <p data-bind="text: translation().vs_comfort_text"></p>
         </div>
       </div>
-      <hr>
+      <hr class="smallHr">
       <div class="row">
-        <div class="col-sm-7">
+        <div class="col-md-7 col-sm-12">
           <h4 data-bind="text: translation().vs_quality_title"></h4>
           <p data-bind="text: translation().vs_quality_text"></p>
         </div>
-        <div class="col-sm-4 wrapper">
+        <div class="col-md-4 col-sm-12 wrapper">
           <img src="assets/images/vehicles-content-quality1.jpg" class="img-cover" alt="kvalitet">
           <img src="assets/images/icons/guarantee-w.svg" class="left-corner">
         </div>
@@ -146,103 +139,104 @@
     </div>
   </section>
   <section class="partners-content">
-      <div class="container h-100">
-        <div class="row align-items-center h-100">
-          <div class="col-sm-4 mx-auto">
-            <h2 data-bind="text: translation().partners_title"></h2>
-          </div>
-          <div class="col-sm-2 mx-auto">
-            <img src="assets/images/icons/uv.svg">
-          </div>
-          <div class="col-sm-2 mx-auto">
-            <img src="assets/images/icons/tuv.svg">
-          </div>
-          <div class="col-sm-2 mx-auto">
-            <img src="assets/images/icons/ewfa.svg">
-          </div>
-          <div class="col-sm-2 mx-auto">
-            <img src="assets/images/icons/mpanrw.svg">
-          </div>
+    <div class="containers h-100">
+      <div class="row align-items-center h-100">
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <h2 data-bind="text: translation().partners_title"></h2>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-3 col-3">
+          <img src="assets/images/icons/uv.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-3">
+          <img src="assets/images/icons/tuv.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-3">
+          <img src="assets/images/icons/ewfa.svg">
+        </div>
+        <div class="col-lg-2 col-md-3 col-3">
+          <img src="assets/images/icons/mpanrw.svg">
         </div>
       </div>
-    </section>
-    <section class="gallery-content">
-      <h2 data-bind="text: translation().vs_gallery_title"></h2>
-      <div id="gallery-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
-        <div class="carousel-inner row container mx-auto" role="listbox">
-          <div class="carousel-item col-md-4 active">
-             <div class="panel panel-default">
-                <div class="panel-thumbnail">
-                  <a href="#" title="image 1" class="thumb">
-                    <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-family.jpg" alt="vehicles-content-family">
-                  </a>
-                </div>
+    </div>
+  </section>
+  <section class="gallery-content">
+    <h2 data-bind="text: translation().vs_gallery_title"></h2>
+    <div id="gallery-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+      <div class="carousel-inner row containers mx-auto" role="listbox">
+        <div class="carousel-item col-md-4 active">
+           <div class="panel panel-default">
+              <div class="panel-thumbnail">
+                <a href="#" title="image 1" class="thumb">
+                  <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-family.jpg" alt="vehicles-content-family">
+                </a>
               </div>
-          </div>
-          <div class="carousel-item col-md-4">
-              <div class="panel panel-default">
-                <div class="panel-thumbnail">
-                  <a href="#" title="image 2" class="thumb">
-                   <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-safety.jpg" alt="slide 8">
-                  </a>
-                </div>
-              </div>
-          </div>
-          <div class="carousel-item col-md-4">
-             <div class="panel panel-default">
-                <div class="panel-thumbnail">
-                  <a href="#" title="image 3" class="thumb">
-                   <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-comfort.jpg" alt="slide 3">
-                  </a>
-                </div>
-              </div>
-          </div>
-          <div class="carousel-item col-md-4">
-             <div class="panel panel-default">
-                <div class="panel-thumbnail">
-                  <a href="#" title="image 4" class="thumb">
-                   <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-safety.jpg" alt="slide 4">
-                  </a>
-                </div>
-              </div>
-          </div>
-          <div class="carousel-item col-md-4">
-              <div class="panel panel-default">
-                <div class="panel-thumbnail">
-                  <a href="#" title="image 5" class="thumb">
-                   <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-quality.jpg" alt="slide 5">
-                  </a>
-                </div>
-              </div>
-          </div>
-          <div class="carousel-item col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-thumbnail">
-                  <a href="#" title="image 6" class="thumb">
-                    <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-safety.jpg" alt="slide 6">
-                  </a>
-                </div>
-              </div>
-          </div>
-          <div class="carousel-item col-md-4">
-             <div class="panel panel-default">
-                <div class="panel-thumbnail">
-                  <a href="#" title="image 7" class="thumb">
-                    <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-family.jpg" alt="slide 7">
-                  </a>
-                </div>
-              </div>
-          </div>
-          <div class="carousel-item col-md-4">
-             <div class="panel panel-default">
-                <div class="panel-thumbnail">
-                  <a href="#" title="image 8" class="thumb">
-                    <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-quality.jpg" alt="slide 8">
-                  </a>
-                </div>
-              </div>
-          </div>
+            </div>
         </div>
+        <div class="carousel-item col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-thumbnail">
+                <a href="#" title="image 2" class="thumb">
+                 <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-safety.jpg" alt="slide 8">
+                </a>
+              </div>
+            </div>
+        </div>
+        <div class="carousel-item col-md-4">
+           <div class="panel panel-default">
+              <div class="panel-thumbnail">
+                <a href="#" title="image 3" class="thumb">
+                 <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-comfort.jpg" alt="slide 3">
+                </a>
+              </div>
+            </div>
+        </div>
+        <div class="carousel-item col-md-4">
+           <div class="panel panel-default">
+              <div class="panel-thumbnail">
+                <a href="#" title="image 4" class="thumb">
+                 <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-safety.jpg" alt="slide 4">
+                </a>
+              </div>
+            </div>
+        </div>
+        <div class="carousel-item col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-thumbnail">
+                <a href="#" title="image 5" class="thumb">
+                 <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-quality.jpg" alt="slide 5">
+                </a>
+              </div>
+            </div>
+        </div>
+        <div class="carousel-item col-md-4">
+          <div class="panel panel-default">
+              <div class="panel-thumbnail">
+                <a href="#" title="image 6" class="thumb">
+                  <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-safety.jpg" alt="slide 6">
+                </a>
+              </div>
+            </div>
+        </div>
+        <div class="carousel-item col-md-4">
+           <div class="panel panel-default">
+              <div class="panel-thumbnail">
+                <a href="#" title="image 7" class="thumb">
+                  <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-family.jpg" alt="slide 7">
+                </a>
+              </div>
+            </div>
+        </div>
+        <div class="carousel-item col-md-4">
+           <div class="panel panel-default">
+              <div class="panel-thumbnail">
+                <a href="#" title="image 8" class="thumb">
+                  <img class="img-fluid mx-auto d-block" src="assets/images/vehicles-content-quality.jpg" alt="slide 8">
+                </a>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="containers">
         <a class="carousel-control-prev" href="#gallery-carousel" role="button" data-slide="prev">
             <img src="assets/images/icons/arrow-gallery-w.svg" class="btt-left">
             <!-- <span class="sr-only">Previous</span> -->
@@ -252,75 +246,80 @@
             <!-- <span class="sr-only">Next</span> -->
         </a>
       </div>
-    </section>
-    <section class="gmap-content">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2810.1517266086375!2d19.85032081554938!3d45.22449837909885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b0554f83e6d6d%3A0xedd9b03919e0e048!2sK-Team!5e0!3m2!1sen!2srs!4v1531661139817" width="100%" height="400" frameborder="0" style="border:0"></iframe>
-      <div class="gmap-overlay"></div>
-    </section>
-    <section class="contact-content">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-7 info">
-            <h2 data-bind="text: translation().contact_title_1"></h2>
-            <hr>
-            <img src="assets/images/icons/pin.svg" class="top-align">
-            <p>K-Team<br>29 21208 Sremska Kamenica<br>Slavka Rodića 29</p>
-            <hr>
-            <img src="assets/images/icons/phone.svg">
-            <p x-ms-format-detection="none">064 / 178-3256</p>
-            <hr>
-            <img src="assets/images/icons/email.svg">
-            <p>kristik57@gmail.com</p>
-            <hr>
-          </div>
-          <div class="col-sm-5">
-            <h2 data-bind="text: translation().contact_title_2"></h2>
-            <form action="#" method="post" class="contactForm">
-              <div class="row">
-                <div class="col-sm-12 wrap">
-                  <input type="text" name="contact_name" placeholder="Your Name">
-                </div>
+    </div>
+  </section>
+  <section class="gmap-content">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2810.1517266086375!2d19.85032081554938!3d45.22449837909885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b0554f83e6d6d%3A0xedd9b03919e0e048!2sK-Team!5e0!3m2!1sen!2srs!4v1531661139817" width="100%" height="400" frameborder="0" style="border:0"></iframe>
+    <div class="gmap-overlay"></div>
+  </section>
+  <section class="contact-content">
+    <div class="containers">
+      <div class="row">
+        <div class="col-md-7 col-sm-12 info">
+          <h2 data-bind="text: translation().contact_title_1"></h2>
+          <hr>
+          <img src="assets/images/icons/pin.svg" class="top-align">
+          <p>K-Team<br/>29 21208 Sremska Kamenica<br/>Slavka Rodića 29</p>
+          <hr>
+          <img src="assets/images/icons/phone.svg">
+          <p x-ms-format-detection="none">064 / 178-3256</p>
+          <hr>
+          <img src="assets/images/icons/email.svg">
+          <p>kristik57@gmail.com</p>
+          <hr>
+        </div>
+        <div class="col-md-5 col-sm-12">
+          <h2 data-bind="text: translation().contact_title_2"></h2>
+          <form action="#" method="post" class="contactForm">
+            <div class="row">
+              <div class="col-sm-12 wrap">
+                <input type="text" name="contact_name" placeholder="Your Name">
               </div>
-              <div class="row">
-                <div class="col-sm-12 wrap">
-                  <input type="text" name="contact_email" placeholder="Your E-mail">
-                </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 wrap">
+                <input type="text" name="contact_email" placeholder="Your E-mail">
               </div>
-              <div class="row">
-                <div class="col-sm-12 wrap">
-                  <textarea name="contact_message" placeholder="Your Message" rows="6" cols="50"></textarea>
-                </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 wrap">
+                <textarea name="contact_message" placeholder="Your Message" rows="6" cols="50"></textarea>
               </div>
-              <button>
-                <p data-bind="text: translation().contact_button"></p>
-                <img src="assets/images/icons/arrow-button.svg">
-              </button>
-            </form>
-          </div>
+            </div>
+            <button>
+              <p data-bind="text: translation().contact_button"></p>
+              <img src="assets/images/icons/arrow-button.svg">
+            </button>
+          </form>
         </div>
       </div>
-    </section>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-9">
-            <p data-bind="text: translation().lang_selector"></p>
-            <ul class="dropdown-content" name="lang" id="testul">
-              <li data-bind="click: change.bind($data, 'De'), text: translation().german"></li>
-              <li data-bind="click: change.bind($data, 'En'), text: translation().english"></li>
-              <li data-bind="click: change.bind($data, 'Sr'), text: translation().serbian"></li>
-            </ul>
-          </div>
-          <div class="col-sm-3">
-            <p><span>K-Team</span> Copyright &copy; 2018</p>
-          </div>
+    </div>
+  </section>
+  <footer>
+    <div class="containers">
+      <div class="row">
+        <div class="col-lg-9 col-md-8 col-sm-12">
+          <p data-bind="text: translation().lang_selector">Language selector:</p>
+          <ul class="dropdown-content" name="language">
+            <li data-bind="click: change.bind($data, 'De')">Deutsch</li>
+            <li data-bind="click: change.bind($data, 'En')">English</li>
+            <li data-bind="click: change.bind($data, 'Sr')">Srpski</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12">
+          <p><span>K-Team</span> Copyright &copy; 2018</p>
         </div>
       </div>
-    </footer>
-    <script src="assets/lib/scripts/knockout-3.4.2.js" type="text/javascript"></script>
-    <script src="assets/lib/scripts/jquery-3.3.1.min.js"></script>
-    <script src="assets/lib/bootstrap/dist/css/bootstrap.min.js"></script>
-    <script src="assets/js/gallery.js" type="text/javascript"></script>
-    <script src="assets/js/all.js" type="text/javascript"></script>
+    </div>
+  </footer>
+  <!-- Back to Top Button -->
+  <a href="#" id="btt-link" style="display: none;">
+    <img src="assets/images/arrow-ub.png">
+  </a>
+  <script src="assets/lib/scripts/knockout-3.4.2.js" type="text/javascript"></script>
+  <script src="assets/lib/scripts/jquery-3.3.1.min.js"></script>
+  <script src="assets/lib/bootstrap/dist/css/bootstrap.min.js"></script>
+  <script src="assets/js/gallery.js" type="text/javascript"></script>
+  <script src="assets/js/all.js" type="text/javascript"></script>
 </body>
 </html>

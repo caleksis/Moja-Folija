@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Titillium Web";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/TitilliumWeb-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Titillium Web";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/TitilliumWeb-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Titillium Web";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/TitilliumWeb-Bold.ttf") format("truetype");
+}
+
+@include main;
+
+html, body{
+	overflow-x: hidden;
+}
+
+h1, h2, h3{
+	color: #ffffff;
+	text-align: center;
+	margin: 0;
+	font-weight: 300;
+}
+
+h1{
+	font-size: 35px;
+}
+
+h2{
+	font-size: 30px;
+	padding-bottom: 30px;
+}
+
+h3{
+	font-size: 18px;
+	text-transform: uppercase;
+	margin: 15px;
+}
+
+p{
+	color: $light_text_color;
+	display: inline-block;
+	font-weight: 300;
+}
+
+.containers {
+	padding: 50px 0;
+	width: 90%;
+	margin: 0 auto;
+}
+
+section:nth-child(odd){
+	background-color: $bg_color_dark;
+}
+
+section:nth-child(even){
+	background-color: $bg_color_light;
+}
+
+// Back to Top Button
+
+#btt-link{
+	display: none;
+	background-color: $bg_color_dark;
+	position: fixed;
+	cursor: pointer;
+	bottom: 20px;
+	right: 20px;
+	z-index: 10;
+	display: inline-block;
+	height: 38px;
+	width: 38px;
+	text-align: center;
+	// border-radius: 50%;
+
+    &:hover{
+    	background-color: $bg_color_light;
+    }
+
+	img{
+		width: 18px;
+		height: 18px;
+		position: relative;
+		top: 5px;
+		text-align: center;
+	}
+}

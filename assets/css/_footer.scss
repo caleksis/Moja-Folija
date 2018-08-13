@@ -1,0 +1,35 @@
+footer{
+	background-color: $bg_color_dark;
+
+	.containers{
+		padding: 0;
+
+		ul{
+			display: inline-block;
+			margin-bottom: 0;
+		}
+
+		p, li{
+			margin: 20px 0;
+			display: inline-block;
+			color: $light_text_color;
+		}
+
+		span{
+			font-weight: bold;
+		}
+
+		li{
+			cursor: pointer;
+			padding-left: 20px;
+
+			&:hover{
+				color: $text_mouseOver;
+			}
+		}
+
+		.col-lg-3, .col-md-4{
+			text-align: right;
+		}
+	}
+}

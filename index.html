@@ -6,18 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <!-- user-scalable is for no zooming when mobile is used, ultimately it won't zoom gmaps -->
 	<title>Moja Folija</title>
-  <link rel="icon" href="assets/images/favicon1.ico" type="image/x-icon">
-  <!--  
-  Stylesheets
-  =============================================
-  -->
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/icon">
   <!-- Default stylesheets-->
   <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Template specific stylesheets-->
-  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
   <!-- Main stylesheet and color file-->
-  <link href="assets/scss/style.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -32,11 +25,11 @@
     <div class="main-navbar">
       <nav class="menu">
         <ul class="nav navbar-nav">
-          <!-- <li><img src="assets/images/arrow-rw1.png"><a href="index.html" data-bind="text: translation().home" class="active"></a></li> -->
-          <li><img src="assets/images/arrow-rw1.png"><a href="vehicles.html" data-bind="text: translation().vehicles"></a></li>
-          <li><img src="assets/images/arrow-rw1.png"><a href="buildings.html" data-bind="text: translation().buildings"></a></li>
-          <li><img src="assets/images/arrow-rw1.png"><a href="#about" data-bind="text: translation().about_us"></a></li>
-          <li><img src="assets/images/arrow-rw1.png"><a href="#references" data-bind="text: translation().references"></a></li>
+          <li><img src="assets/images/arrow-rw.png"><a href="index.html" data-bind="text: translation().home" class="active"></a></li>
+          <li><img src="assets/images/arrow-rw.png"><a href="vehicles.html" data-bind="text: translation().vehicles"></a></li>
+          <li><img src="assets/images/arrow-rw.png"><a href="buildings.html" data-bind="text: translation().buildings"></a></li>
+          <li><img src="assets/images/arrow-rw.png"><a href="#about" data-bind="text: translation().about_us"></a></li>
+          <li><img src="assets/images/arrow-rw.png"><a href="#references" data-bind="text: translation().references"></a></li>
         </ul>
       </nav>
       <div class="dropdown" id="myDropdown">
@@ -44,7 +37,7 @@
           <img src="assets/images/icons/arrow-down.svg">
           <p id="testa">Deutsch</p>
         </button>
-        <ul name="lang" class="dropdown-content" id="testul">
+        <ul name="language" class="dropdown-content" id="testul">
           <li data-bind="click: change.bind($data, 'De')">Deutsch</li>
           <li data-bind="click: change.bind($data, 'En')">English</li>
           <li data-bind="click: change.bind($data, 'Sr')">Srpski</li>
@@ -66,9 +59,9 @@
       </div>
     </div>
     <div class="slide-line">
-      <div class="container">
+      <div class="containers">
         <div class="row">
-          <div class="col-lg-4 col-md-5 col-sm-5">
+          <div class="col-lg-4 col-md-5 col-sm-5 col-12">
             <div class="icon-picker" onclick="currentSlide(1)">
               <img src="assets/images/icons/vehicles-w.svg">
               <p data-bind="text: translation().vehicles"></p>
@@ -78,11 +71,11 @@
               <p data-bind="text: translation().buildings"></p>
             </div>
           </div>
-          <div class="col-lg-8 col-md-7 col-sm-7 textBottom">
+          <div class="col-lg-8 col-md-7 col-sm-7 col-12 textBottom">
             <h2 data-bind="text: translation().vehicles_title"></h2>
             <a href="vehicles.html" data-bind="text: translation().slider_button"></a>
           </div>
-          <div class="col-lg-8 col-md-7 textBottom">
+          <div class="col-lg-8 col-md-7 col-sm-7 col-12 textBottom">
             <h2 data-bind="text: translation().buildings_title"></h2>
             <a href="buildings.html" data-bind="text: translation().slider_button"></a>
           </div>
@@ -91,7 +84,7 @@
     </div>
   </section>
   <section class="text-content">
-    <div class="container">
+    <div class="containers">
       <div class="row">
         <div class="col-sm-12">
           <h2 data-bind="text: translation().content_title"></h2>
@@ -111,14 +104,14 @@
     </div>
   </section>
   <section class="competence-content">
-    <div class="container">
+    <div class="containers">
       <div class="row">
         <div class="col-sm-12">
           <h2 data-bind="text: translation().competence_title"></h2>
         </div>
       </div>
       <div class="row">
-        <div class="scene col-lg-3 col-md-6 col-sm-12 col-12">
+        <div class="scene col-lg-3 col-md-6 col-sm-6 col-6">
           <div class="card">
             <div class="card__face card__face--front">
               <img src="assets/images/icons/passion-w.svg">
@@ -131,7 +124,7 @@
             </div>
           </div>
         </div>
-        <div class="scene col-lg-3 col-md-6 col-sm-12 col-12">
+        <div class="scene col-lg-3 col-md-6 col-sm-6 col-6">
           <div class="card">
             <div class="card__face card__face--front">
               <img src="assets/images/icons/experience-w.svg">
@@ -144,7 +137,7 @@
             </div>
           </div>
         </div>
-        <div class="scene col-lg-3 col-md-6 col-sm-12 col-12">
+        <div class="scene col-lg-3 col-md-6 col-sm-6 col-6">
           <div class="card">
             <div class="card__face card__face--front">
               <img src="assets/images/icons/films-w.svg">
@@ -157,7 +150,7 @@
             </div>
           </div>
         </div>
-        <div class="scene col-lg-3 col-md-6 col-sm-12 col-12">
+        <div class="scene col-lg-3 col-md-6 col-sm-6 col-6">
           <div class="card">
             <div class="card__face card__face--front">
               <img src="assets/images/icons/guarantee-w.svg">
@@ -174,9 +167,9 @@
     </div>
   </section>
   <section class="topic-content">
-    <div class="container">
+    <div class="containers">
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-md-6 col-sm-12 col-12">
           <a href="vehicles.html">
             <img src="assets/images/teaser-vehicles.jpg" class="img-cover" alt="vozila">
             <img src="assets/images/dynamic-element-small.png" class="left-corner">
@@ -191,7 +184,7 @@
             </div>
           </a>
         </div>
-        <div class="col-sm-6">
+        <div class="col-md-6 col-sm-12 col-12">
           <a href="buildings.html">
             <img src="assets/images/teaser-buildings.jpg" class="img-cover" alt="zgrade">
             <img src="assets/images/dynamic-element-small.png" class="right-corner">
@@ -210,21 +203,21 @@
     </div>
   </section>
   <section class="partners-content">
-    <div class="container h-100">
+    <div class="containers h-100">
       <div class="row align-items-center h-100">
-        <div class="col-sm-4 mx-auto">
+        <div class="col-lg-4 col-md-12 col-sm-12">
           <h2 data-bind="text: translation().partners_title"></h2>
         </div>
-        <div class="col-sm-2 mx-auto">
+        <div class="col-lg-2 col-md-3 col-sm-3 col-3">
           <img src="assets/images/icons/uv.svg">
         </div>
-        <div class="col-sm-2 mx-auto">
+        <div class="col-lg-2 col-md-3 col-3">
           <img src="assets/images/icons/tuv.svg">
         </div>
-        <div class="col-sm-2 mx-auto">
+        <div class="col-lg-2 col-md-3 col-3">
           <img src="assets/images/icons/ewfa.svg">
         </div>
-        <div class="col-sm-2 mx-auto">
+        <div class="col-lg-2 col-md-3 col-3">
           <img src="assets/images/icons/mpanrw.svg">
         </div>
       </div>
@@ -235,9 +228,9 @@
     <div class="gmap-overlay"></div>
   </section>
   <section class="contact-content">
-    <div class="container">
+    <div class="containers">
       <div class="row">
-        <div class="col-sm-7 info">
+        <div class="col-md-7 col-sm-12 info">
           <h2 data-bind="text: translation().contact_title_1"></h2>
           <hr>
           <img src="assets/images/icons/pin.svg" class="top-align">
@@ -250,7 +243,7 @@
           <p>kristik57@gmail.com</p>
           <hr>
         </div>
-        <div class="col-sm-5">
+        <div class="col-md-5 col-sm-12">
           <h2 data-bind="text: translation().contact_title_2"></h2>
           <form action="#" method="post" class="contactForm">
             <div class="row">
@@ -278,26 +271,26 @@
     </div>
   </section>
   <footer>
-    <div class="container">
+    <div class="containers">
       <div class="row">
-        <div class="col-sm-9">
-          <p data-bind="text: translation().lang_selector"></p>
-          <ul class="dropdown-content" name="lang" id="testul">
-            <li data-bind="click: change.bind($data, 'De'), text: translation().german"></li>
-            <li data-bind="click: change.bind($data, 'En'), text: translation().english"></li>
-            <li data-bind="click: change.bind($data, 'Sr'), text: translation().serbian"></li>
+        <div class="col-lg-9 col-md-8 col-sm-12">
+          <p data-bind="text: translation().lang_selector">Language selector:</p>
+          <ul class="dropdown-content" name="language">
+            <li data-bind="click: change.bind($data, 'De')">Deutsch</li>
+            <li data-bind="click: change.bind($data, 'En')">English</li>
+            <li data-bind="click: change.bind($data, 'Sr')">Srpski</li>
           </ul>
         </div>
-        <div class="col-sm-3">
+        <div class="col-lg-3 col-md-4 col-sm-12">
           <p><span>K-Team</span> Copyright &copy; 2018</p>
         </div>
       </div>
     </div>
   </footer>
-  <!-- go to top Button -->
-  <!-- <a href="#0" class="btt-link btt-link-is-visible">
-    <img src="assets/images/icons/arrow-up.svg">
-  </a> -->
+  <!-- Back to Top Button -->
+  <a href="#" id="btt-link" style="display: none;">
+    <img src="assets/images/arrow-ub.png">
+  </a>
   <script src="assets/lib/scripts/knockout-3.4.2.js" type="text/javascript"></script>
   <script src="assets/lib/scripts/jquery-3.3.1.min.js"></script>
   <script src="assets/js/index.js" type="text/javascript"></script>
