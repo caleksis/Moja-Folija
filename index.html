@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <!-- user-scalable is for no zooming when mobile is used, ultimately it won't zoom gmaps -->
 	<title>Moja Folija</title>
@@ -17,12 +18,13 @@
     <div class="header-logo">
       <a href="index.html"><img src="assets/images/logo_mojafolija.png" alt="Moja Folija"></a>
       <button class="menu-button" id="open-button" type="button">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span class="lines">
+         <!--  ::before
+          ::after -->
+        </span>
       </button>
     </div>
-    <div class="main-navbar">
+    <div class="main-navbar" id="main-navbar">
       <nav class="menu">
         <ul class="nav navbar-nav">
           <li><img src="assets/images/arrow-rw.png"><a href="index.html" data-bind="text: translation().home" class="active"></a></li>
@@ -35,9 +37,11 @@
       <div class="dropdown" id="myDropdown">
         <button class="dropbtn">
           <img src="assets/images/icons/arrow-down.svg">
+          <span></span>
+          <span></span>
           <p id="testa">Deutsch</p>
         </button>
-        <ul name="language" class="dropdown-content" id="testul">
+        <ul name="lang" class="dropdown-content" id="testul">
           <li data-bind="click: change.bind($data, 'De')">Deutsch</li>
           <li data-bind="click: change.bind($data, 'En')">English</li>
           <li data-bind="click: change.bind($data, 'Sr')">Srpski</li>
@@ -111,7 +115,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="scene col-lg-3 col-md-6 col-sm-6 col-6">
+        <div class="scene col-lg-3 col-md-6 col-sm-6 col-12">
           <div class="card">
             <div class="card__face card__face--front">
               <img src="assets/images/icons/passion-w.svg">
@@ -124,7 +128,7 @@
             </div>
           </div>
         </div>
-        <div class="scene col-lg-3 col-md-6 col-sm-6 col-6">
+        <div class="scene col-lg-3 col-md-6 col-sm-6 col-12">
           <div class="card">
             <div class="card__face card__face--front">
               <img src="assets/images/icons/experience-w.svg">
@@ -137,7 +141,7 @@
             </div>
           </div>
         </div>
-        <div class="scene col-lg-3 col-md-6 col-sm-6 col-6">
+        <div class="scene col-lg-3 col-md-6 col-sm-6 col-12">
           <div class="card">
             <div class="card__face card__face--front">
               <img src="assets/images/icons/films-w.svg">
@@ -150,7 +154,7 @@
             </div>
           </div>
         </div>
-        <div class="scene col-lg-3 col-md-6 col-sm-6 col-6">
+        <div class="scene col-lg-3 col-md-6 col-sm-6 col-12">
           <div class="card">
             <div class="card__face card__face--front">
               <img src="assets/images/icons/guarantee-w.svg">
@@ -208,13 +212,13 @@
         <div class="col-lg-4 col-md-12 col-sm-12">
           <h2 data-bind="text: translation().partners_title"></h2>
         </div>
-        <div class="col-lg-2 col-md-3 col-sm-3 col-3">
+        <div class="col-lg-2 col-md-3 col-3">
           <img src="assets/images/icons/uv.svg">
         </div>
         <div class="col-lg-2 col-md-3 col-3">
           <img src="assets/images/icons/tuv.svg">
         </div>
-        <div class="col-lg-2 col-md-3 col-3">
+        <div class="col-lg-2 col-md-3 col-3 imgLeft">
           <img src="assets/images/icons/ewfa.svg">
         </div>
         <div class="col-lg-2 col-md-3 col-3">
@@ -275,7 +279,7 @@
       <div class="row">
         <div class="col-lg-9 col-md-8 col-sm-12">
           <p data-bind="text: translation().lang_selector">Language selector:</p>
-          <ul class="dropdown-content" name="language">
+          <ul class="dropdown-content" name="lang">
             <li data-bind="click: change.bind($data, 'De')">Deutsch</li>
             <li data-bind="click: change.bind($data, 'En')">English</li>
             <li data-bind="click: change.bind($data, 'Sr')">Srpski</li>

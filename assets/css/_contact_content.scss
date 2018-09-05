@@ -39,7 +39,9 @@
 				width: 100%;
 				background-color: $bg_mouseOver;
 				border: none;
-				
+				border-radius: 0;
+				-webkit-appearance: none;
+
 				&:focus{
 					outline: none;
 				}

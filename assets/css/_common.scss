@@ -25,6 +25,10 @@ html, body{
 	overflow-x: hidden;
 }
 
+*:focus{
+	outline: none;
+}
+
 h1, h2, h3{
 	color: #ffffff;
 	text-align: center;
@@ -81,7 +85,6 @@ section:nth-child(even){
 	height: 38px;
 	width: 38px;
 	text-align: center;
-	// border-radius: 50%;
 
     &:hover{
     	background-color: $bg_color_light;

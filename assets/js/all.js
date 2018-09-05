@@ -27,6 +27,10 @@ $("html").click(function () {
     removeClass = true;
 });
 
+// $(".menu-button").on("click", function() {
+//     $(".main-navbar").animate({width:'toggle'}, 650);
+// });
+
 // KNOCKOUT TRANSLATION
 
 var translation = {
@@ -90,7 +94,7 @@ var translation = {
         content_text_blue: 'Moja Folija bietet Ihnen ein breites Spektrum an Leistungen rund um das Thema Folierung an. Egal ob Autofolierungen, Scheibentönungen oder Gebäudefolierung für Außen- und Innenfolien.',
         content_text_left: 'Mangatus Landebitat occum, te et, ut dollore, excesequi ulparum fugitiunt adis estoresectat am et dolut fugitatem denihic ienturi tisque voluptae lations ecerciento imolest dolore eum doloria sperum faccullam quis inimus. Sque voluptae.',
         content_text_right: 'Dandebitat occum, te et, ut dollore, excesequi ulparum fugitiunt adis estoresectat am et dolut fugitatem denihic ienturi tisque voluptae lations ecerciento imolest dolore eum doloria sperum faccullam quis inimus.',
-        competence_title: 'Unsere Kompetenz',
+        competence_title: 'Our Competencies',
         passion_title: 'Passion',
         passion_text: 'Cars are our passion',
         experience_title: 'Experience',
@@ -103,7 +107,7 @@ var translation = {
         contact_title_1: 'We are here for you',
         contact_title_2: 'Your request',
         contact_button: 'Talk to us!',
-        lang_selector: 'Language selection:',
+        lang_selector: 'Language:',
         german: 'German',
         english: 'English',
         serbian: 'Serbian',
@@ -133,11 +137,11 @@ var translation = {
         vehicles_title: 'Zatamnjavamo vaše prozore automobila pojedinačno za merenje.',
         buildings_title: 'Lorem ipsum dolor sitam est magnatus semper.',
         slider_button: 'Saznajte više',
-        content_title: '100% Kvalitet u Savršenstvu.',
+        content_title: '100% Kvalitet u savršenstvu.',
         content_text_blue: 'Moja Folija bietet Ihnen ein breites Spektrum an Leistungen rund um das Thema Folierung an. Egal ob Autofolierungen, Scheibentönungen oder Gebäudefolierung für Außen- und Innenfolien.',
         content_text_left: 'Mangatus Landebitat occum, te et, ut dollore, excesequi ulparum fugitiunt adis estoresectat am et dolut fugitatem denihic ienturi tisque voluptae lations ecerciento imolest dolore eum doloria sperum faccullam quis inimus. Sque voluptae.',
         content_text_right: 'Dandebitat occum, te et, ut dollore, excesequi ulparum fugitiunt adis estoresectat am et dolut fugitatem denihic ienturi tisque voluptae lations ecerciento imolest dolore eum doloria sperum faccullam quis inimus.',
-        competence_title: 'Naša Kompetencija',
+        competence_title: 'Naše kompetencije',
         passion_title: 'Strast',
         passion_text: 'Automobili su naša strast',
         experience_title: 'Iskustvo',
@@ -150,7 +154,7 @@ var translation = {
         contact_title_1: 'Tu smo za vas',
         contact_title_2: 'Vaš zahtev',
         contact_button: 'Pričaj sa nama!',
-        lang_selector: 'Izbor jezika:',
+        lang_selector: 'Jezik:',
         german: 'Nemački',
         english: 'Engleski',
         serbian: 'Srpski',
@@ -175,35 +179,31 @@ var translation = {
 
 function AppViewModel() {
     var self = this;
-    var language = localStorage.getItem('translation');
-    if (language){
-        this.translation = ko.observable(translation[language]);
+    var lang = localStorage.getItem('translation');
+    if (lang){
+        this.translation = ko.observable(translation[lang]);
     } else {
         this.translation = ko.observable(translation["De"]);
     }
 
 //? kod ispod ne radi
-    var clickedSubMenu = localStorage.getItem('language');
+    // var clickedSubMenu = localStorage.getItem('lang');
 
     // if (clickedSubMenu == "English"){
-    //     this.language = ko.observable(language["En"]);
+    //     this.lang = ko.observable(lang["En"]);
     // } else if (clickedSubMenu == "Srpski"){
-    //     this.language = ko.observable(language["Sr"]);
+    //     this.lang = ko.observable(lang["Sr"]);
     // } else {
-    //     this.language = ko.observable(language["De"]);
+    //     this.lang = ko.observable(lang["De"]);
     // }
 
-    // if (language) this.clickedSubMenu = ko.observable(clickedSubMenu[language]);
-    // else if (language == "Sr") 
+    // if (lang) this.clickedSubMenu = ko.observable(clickedSubMenu[lang]);
+    // else if (lang == "Sr") 
     //     this.clickedSubMenu = ko.observable(clickedSubMenu["Srpski"]);
-    // else if (language == "En")
+    // else if (lang == "En")
     //     this.clickedSubMenu = ko.observable(clickedSubMenu [ "English"]);
     // else 
     //     this.clickedSubMenu = ko.observable(clickedSubMenu["Deutsch"]);
-
-       if (language) this.clickedSubMenu = ko.observable(clickedSubMenu[language]);
-    else (language == "De")
-        this.clickedSubMenu = ko.observable(clickedSubMenu["Deutsch"]);
 
 
     // if (clickedSubMenu == "Srpski") {
@@ -214,15 +214,16 @@ function AppViewModel() {
     //     this.translation = ko.observable(translation["De"]);
     // }
 
-    this.change = function(language){
-        self.translation(translation[language]);
-        localStorage.setItem('translation', language);
+    this.change = function(lang){
+        self.translation(translation[lang]);
+        localStorage.setItem('translation', lang);
         console.log(self.translation());
         var clickedSubMenu = "Srpski";
-        if (language == "De") clickedSubMenu = "Deutsch";
-        else if (language == "En") clickedSubMenu = "English";
+        if (lang == "De") clickedSubMenu = "Deutsch";
+        else if (lang == "En") clickedSubMenu = "English";
+
+        // localStorage.setItem('lang', clickedSubMenu); //?
         $('#testa').text(clickedSubMenu);
-         // localStorage.setItem('language', clickedSubMenu); //?
     }
 }
 

@@ -75,6 +75,10 @@
 				display: inline-block;
 			}
 
+			span{
+				display: none;
+			}
+
 			p{
 				color: $text_color;
 				margin-bottom: 0;
@@ -106,7 +110,6 @@
     			&:hover{
     				background-color: #373737;
     				width: 100%;
-    				// color: #fff;
     				color: $text_mouseOver;
     				padding: 12px 20px;
     			}

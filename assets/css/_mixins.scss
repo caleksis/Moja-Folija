@@ -42,3 +42,15 @@
     @content;
   }
 }
+
+@mixin xxs_mobile {
+  @media screen and (max-width: $xxs_small_break) {
+    @content;
+  }
+}
+
+@mixin blah {
+   @media screen and (max-width: $blah) {
+    @content;
+  }
+}

@@ -53,7 +53,7 @@
 		}
 
 		.col-md-5{
-			text-align: center;
+			text-align: right;
 		}
 
 		.icon-picker {
@@ -70,6 +70,7 @@
 
 			&:last-child{
 				padding-left: 30px;
+				padding-right: 50px;
 			}
 
 			img{
